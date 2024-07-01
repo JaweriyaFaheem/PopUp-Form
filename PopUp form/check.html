@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check it!</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+        padding: 12px 33px;
+  font-size: 20px;
+  color: white;
+  background: black;
+  border: 2px solid white;
+  border-radius: 490px 130px;
+  box-shadow: 2px 2px black;
+    }
+    .popup{
+        width: 400px;
+  border: 2px solid black;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 32px;
+  height: 217px;
+  text-align: center;
+  padding: 55px 0px 0px 0px;
+  display: none;
+    }
+
+    .outBtn{
+        margin-top: 40px;
+  padding: 5px 27px;
+  background: black;
+  color: white;
+  border-radius: 44px 15px;
+  box-shadow: 2px 2px black;
+    }
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <button type="submit" class="btn">click me!</button>
+
+        <div class="popup">
+            <h1>Wow!!!</h1>
+            <p>Congratulations you've done this!</p>
+            <button type="button" class="outBtn">Ok</button>
+        </div>
+    </div>
+
+    <script src="check.js"></script>
+</body>
+</html>
